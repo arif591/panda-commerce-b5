@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/logo.png" alt="">
@@ -29,83 +29,88 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Home -->
-        <div id="carouselExampleControls" class="container my-5 carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row p-4 align-items-center">
-                        <div class="col-lg-7">
-                            <h1>Mega LCD TV For Sports</h1>
-                            <p>This is the best tv in the world for people who just want to waste time in front of tv.
-                            </p>
-                            <h1 class="text-success">$1200</h1>
-                            <a href="#" class="btn btn-success">Buy Now</a>
+        <section id="home" class="my-5">
+            <div id="carouselExampleControls" class="container carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row p-4 align-items-center">
+                            <div class="col-lg-7">
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is the best tv in the world for people who just want to waste time in front of
+                                    tv.
+                                </p>
+                                <h1 class="text-success">$1200</h1>
+                                <a href="#" class="btn btn-success">Buy Now</a>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="./assets/images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            </div>
                         </div>
-                        <div class="col-lg-5">
-                            <img src="./assets/images/banner-images/tv.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row p-4 align-items-center">
+                            <div class="col-lg-7">
+                                <h1>Cool Dude Headphone</h1>
+                                <p>This is the best headphone in the world for people who just want to waste time in
+                                    front
+                                    of funky world.</p>
+                                <h1 class="text-success">$430</h1>
+                                <a href="#" class="btn btn-success">Buy Now</a>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="./assets/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row p-4 align-items-center">
+                            <div class="col-lg-7">
+                                <h1>X-Box for your living room</h1>
+                                <p>This is the best x-box in the world for people who just want to waste time in front
+                                    of
+                                    fake sports.</p>
+                                <h1 class="text-success">$600</h1>
+                                <a href="#" class="btn btn-success">Buy Now</a>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="./assets/images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row p-4 align-items-center">
-                        <div class="col-lg-7">
-                            <h1>Cool Dude Headphone</h1>
-                            <p>This is the best headphone in the world for people who just want to waste time in front
-                                of funky world.</p>
-                            <h1 class="text-success">$430</h1>
-                            <a href="#" class="btn btn-success">Buy Now</a>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="./assets/images/banner-images/headphone.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row p-4 align-items-center">
-                        <div class="col-lg-7">
-                            <h1>X-Box for your living room</h1>
-                            <p>This is the best x-box in the world for people who just want to waste time in front of
-                                fake sports.</p>
-                            <h1 class="text-success">$600</h1>
-                            <a href="#" class="btn btn-success">Buy Now</a>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="./assets/images/banner-images/xbox.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
     </header>
 
     <main>
         <!-- Categories -->
-        <section class="categories container my-5">
+        <section id="categories" class="container my-5">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center justify-content-between p-3 border bg-warning rounded-3">
@@ -128,7 +133,7 @@
             </div>
         </section>
         <!-- Shoes -->
-        <section class="container my-5">
+        <section id="shoes" class="container my-5">
             <h2 class="text-black-50">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col-lg-4">
@@ -161,7 +166,7 @@
             </div>
         </section>
         <!-- Backpack -->
-        <section class="container my-5">
+        <section id="backpack" class="container my-5">
             <h2 class="text-black-50">Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col-lg-4">
@@ -194,13 +199,19 @@
             </div>
         </section>
         <!-- Subscribe -->
-        <section></section>
+        <section id="subscribe" class="container d-flex justify-content-center align-items-center p-4 my-5">
+            <form action="#" class="py-5">
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p class="text-black-50">Get updates on sales, specials and more</p>
+                <input type="text" class="d-block mb-2">
+                <a href="#" class="btn btn-success">Submit</a>
+            </form>
+        </section>
     </main>
 
-
-
-
-
+    <footer class="mt-5">
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
 
 
     <!-- Bootstrap 5 Script for Pushpa The Rise -->

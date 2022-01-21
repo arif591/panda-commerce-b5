@@ -3,10 +3,11 @@
     padding: 0;
 }
 
-.carousel-item {
+.carousel-item,
+#subscribe {
     background-color: #65f0a434;
     border-radius: 10px;
 }
-.categories img {
+#categories img {
     width: 100px;
 }
